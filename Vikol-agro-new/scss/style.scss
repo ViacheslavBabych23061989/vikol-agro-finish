@@ -1,0 +1,260 @@
+@font-face {
+    font-family: 'Bookman Old Style';
+    src: url('BookmanOldStyle.eot');
+    src: url('BookmanOldStyle.eot?#iefix') format('embedded-opentype'),
+        url('BookmanOldStyle.woff2') format('woff2'),
+        url('BookmanOldStyle.woff') format('woff'),
+        url('BookmanOldStyle.ttf') format('truetype'),
+        url('BookmanOldStyle.svg#BookmanOldStyle') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+* {
+	margin: 0;
+	padding: 0;  
+}
+html {
+    scroll-behavior: smooth; 
+    width: 100%;
+    height: 100%;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+li {
+	list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    position: relative;
+    display: flex;
+    flex-direction: column;  
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/header.jpg);  
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    &__logo {
+        width: 40%; 
+        position: absolute;
+        top: 5%;
+        left: 58%;   
+    }
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 100px 50px 100px;
+        align-items: flex-start;
+        &_left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 290px;
+            .header__menu-info {
+                text-align: center;
+                margin-bottom: 20px;
+                font-family: 'Bookman Old Style';
+                color: white;
+                font-size: 30px;
+                font-weight: 600;
+                letter-spacing: 7px;
+                text-shadow: black 2px 1px 0, black -2px -1px 0, black -2px 1px 0, black 2px -1px 0;               
+            }            
+            .header__menu-info:hover {               
+                font-size: 32px;
+                margin-bottom: 16px;               
+            }
+            .header__menu-info a {
+               color: white;
+            }
+            .header__menu-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #FFFFFF;
+                font-family: 'Bookman Old Style';
+                font-size: 30px;
+                letter-spacing: 1px;
+                width: 250px;
+                height: 50px;
+                border-radius: 20px;
+                background-color: #097920;
+                text-decoration: none;              
+                padding-bottom: 2px; 
+                transition: 0.5s;    
+            }
+            .header__menu-button:hover {
+                background-color: #4c3531;
+                color: white;
+            }
+            .header__menu-button a {
+                padding: 10px 35px;
+                color: white;
+            }
+        }      
+        &_right {
+            width: 290px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .header__menu-info {
+                text-align: center;
+                margin-bottom: 20px;
+                font-family: 'Bookman Old Style';
+                color: white;
+                font-size: 30px;
+                font-weight: 600;
+                letter-spacing: 7px;
+                text-shadow: black 2px 1px 0, black -2px -1px 0, black -2px 1px 0, black 2px -1px 0;
+            }  
+            .header__menu-info:hover {               
+                font-size: 32px;
+                margin-bottom: 16px;               
+            }        
+            .header__menu-info a {
+                color: white;
+             }        
+            .header__menu-button {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #FFFFFF;
+                font-family: 'Bookman Old Style';
+                font-size: 30px;
+                letter-spacing: 1px;
+                width: 250px;
+                height: 50px;
+                border-radius: 20px;
+                background-color: #097920;
+                text-decoration: none;              
+                padding-bottom: 2px; 
+                transition: 0.5s;    
+            }
+            .header__menu-button:hover {
+                background-color: #4c3531;
+                color: white;
+            }
+            .header__menu-button a {
+                padding: 10px 33px;
+                color: white;
+            }
+        }
+    }
+}
+@media(max-width: 900px) {
+    .header {
+        &__logo {
+            top: 6%; 
+        }
+        &__menu {
+            margin: 0px 50px 50px 50px;
+        }
+    }
+}
+@media(max-width: 720px) {
+    .header {
+        &__menu {
+            margin: 0px 30px 50px 30px; 
+            &_left {
+                width: 265px;
+                .header__menu-info {
+                    font-size: 26px;             
+                }            
+                .header__menu-info:hover {               
+                    font-size: 28px;            
+                }
+                .header__menu-button {
+                    font-size: 26px;
+                    width: 230px;
+                    height: 45px;  
+                }
+                .header__menu-button a {
+                    padding: 9px 35px;
+                }
+            }      
+            &_right {
+                width: 265px;
+                .header__menu-info {
+                    font-size: 26px;
+                }  
+                .header__menu-info:hover {               
+                    font-size: 28px;            
+                }               
+                .header__menu-button {
+                    font-size: 26px;
+                    width: 230px;
+                    height: 45px;
+                }
+                .header__menu-button a {
+                    padding: 9px 35px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 620px) {
+    .header {
+        &__menu {
+            margin: 0px 20px 50px 20px; 
+            &_left {
+                width: 225px;
+                .header__menu-info {
+                    font-size: 20px;             
+                }            
+                .header__menu-info:hover {               
+                    font-size: 22px;            
+                }
+                .header__menu-button {
+                    font-size: 20px;
+                    width: 190px;
+                    height: 40px;  
+                }
+                .header__menu-button a {
+                    padding: 9px 32px;
+                }
+            }      
+            &_right {
+                width: 225px;
+                .header__menu-info {
+                    font-size: 20px;
+                }  
+                .header__menu-info:hover {               
+                    font-size: 22px;            
+                }               
+                .header__menu-button {
+                    font-size: 20px;
+                    width: 190px;
+                    height: 40px; 
+                }
+                .header__menu-button a {
+                    padding: 9px 32px;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 520px) {
+    .header {
+        &__logo {
+            top: 5%; 
+            margin: auto;
+            left: 0px;
+            right: 0px;
+            width: 300px;
+        }
+        &__menu {
+            height: 260px;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px 0px 50px 0px;           
+        }
+    }
+}
